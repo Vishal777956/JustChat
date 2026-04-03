@@ -6,6 +6,7 @@ import { connectToSocket } from "./controllers/socketManager.js";
 import userRoutes from "./routes/users.routes.js";
 
 
+
 const app = express();
 const PORT = 3000;
 
@@ -22,7 +23,7 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () =>{
 
-  const connectionDb = await mongoose.connect("mongodb+srv://vishalmp577_db_user:N3CB4hKjJmW0WAli@justtalk.aw7imlm.mongodb.net/?appName=JustTalk");
+  const connectionDb = await mongoose.connect(process.env.MONGO_URI);
   console.log(`MONGODB connected, DB host: ${connectionDb.connection.host}`);
 
 server.listen(app.get("PORT"),()=>{
