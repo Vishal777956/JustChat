@@ -1,0 +1,63 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.meetVideoContainer{
+  position: relative;
+  height: 100vh;
+  background-color: rgba(5, 5, 254, 0.682);
+
+}
+
+.meetUserVideo{
+position: absolute;
+bottom: 5vh;
+height: 45vh;
+left: 2vh;
+border-radius: 20px;
+}
+
+.buttonContainer{
+position: absolute;
+width: 100vw;
+bottom: 0;
+text-align: center;
+padding-inline: 1rem;
+}
+
+.conferenceView {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  
+}
+
+.conferenceView  video {
+  width: 27vw;
+  min-width: 20vw;
+  border-radius: 20px;
+
+}
+
+.chatRoom{
+  position: absolute;
+  bottom: 5vh;
+  height: 95vh;
+  width: 30vw;
+  right: 0;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding-inline: 1rem;
+}
+
+
+.chatContainer{
+  position: relative;
+  height: 100%;
+
+}
+
+.chattingArea{
+  position: absolute;
+  top:46rem;
+}
