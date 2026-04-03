@@ -10,9 +10,11 @@ import { MdCallEnd } from "react-icons/md";
 import Badge from "@mui/material/Badge";
 import { BsChatText } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
+import server from "../environment";
 
 
-const server_url = "http://localhost:3000";
+const server_url =server;
+
 let connections = {};
 
 const peerConfigConnections = {
