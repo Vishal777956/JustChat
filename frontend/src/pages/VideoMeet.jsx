@@ -543,10 +543,15 @@ function VideoMeet() {
             })}
               </div>
 
-              <div className="chattingArea">
+              {/* <div className="chattingArea">
   <TextField style={{marginLeft:"1rem",marginTop:"-11rem"}} value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter your Chat" variant="outlined" />
-  <Button variant="contained" style={{marginLeft:"1rem",height:"3rem", marginTop:"-20.5rem",backgroundColor:"rgba(5, 5, 254, 0.682)",color:"white", fontWeight:"bold"}} onClick={sendMessage}>Send</Button>
-              </div>
+  <Button className="sendBtn" variant="contained" style={{marginLeft:"1rem",height:"3rem", marginTop:"-20.5rem",backgroundColor:"rgba(5, 5, 254, 0.682)",color:"white", fontWeight:"bold"}} onClick={sendMessage}>Send</Button>
+              </div> */}
+
+              <div className="chattingArea">
+  <TextField style={{flex: 1}} value={message} onChange={(e) => setMessage(e.target.value)} id="outlined-basic" label="Enter your Chat" variant="outlined" />
+  <Button variant="contained" style={{height:"3rem", backgroundColor:"rgba(5, 5, 254, 0.682)", color:"white", fontWeight:"bold"}} onClick={sendMessage}>Send</Button>
+</div>
             
 
               </div>
