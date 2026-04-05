@@ -389,16 +389,18 @@ function VideoMeet() {
     setAudio(!audio);
   };
 
-  let handleEndCall = () => {
-    try {
-            let tracks = localVideoRef.current.srcObject.getTracks();
-            tracks.forEach((track) => track.stop());
-          } catch (e) {
-            console.log(e);
-          }
-            routeTo("/home");
+let handleEndCall = () => {
+  try {
+    let tracks = localVideoRef.current.srcObject.getTracks();
+    tracks.forEach((track) => track.stop());
+  } catch (e) { console.log(e); }
 
-  };
+  try {
+    window.localStream.getTracks().forEach((track) => track.stop());
+  } catch (e) { console.log(e); }
+
+  routeTo("/home");
+};
 
   let sendMessage = () => {
     socketRef.current.emit("chat-message",message,username);
