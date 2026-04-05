@@ -7,7 +7,7 @@ A real-time video conferencing and chat application built with React, Node.js, W
 
 ## 🚀 Live Demo
 
-> Coming soon after deployment
+🌐 [justchatfrontend-iieu.onrender.com](https://justchatfrontend-iieu.onrender.com)
 
 ---
 
