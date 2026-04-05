@@ -5,7 +5,8 @@ import cors from "cors";
 import { connectToSocket } from "./controllers/socketManager.js";
 import userRoutes from "./routes/users.routes.js";
 
-
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 const PORT = 3000;
